@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hyflow.co</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <video id="background-video" autoplay muted loop>
+        <source src="assets/bg.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+      <div class="profile">
+        <img src="assets/hyflow.png" alt="photo profile" />
+        <p class="name">hyflow.co</p>
+      </div>
+
+      <div class="about">
+        <p> </p><br>
+        <p> </p><br>
+      </div>
+
+      <div class="button-container" id="button-container"></div>
+      
+
+      <p class="copyright" id="currentYear"></p>
+    </div>
+    <script>
+
+        var currentYearElement = document.getElementById("currentYear");
+        var currentYear = new Date().getFullYear();
+        currentYearElement.innerHTML = "Copyright ©hyflow.co " + currentYear;
+        currentYearElement.style.color = "#fff"; 
+      </script>      
+
+  </body>
+</html>
